@@ -1,0 +1,3 @@
+C++ Day 1: Environment setup and Hello World
+
+Configured MinGW, VS Code, and verified compilation on Windows 11. Implemented basic I/O and main return logic.
