@@ -1,0 +1,62 @@
+Proofs?
+
+A proof is an argument so convincing that you are ready to use it to convince other people
+
+This by-product is a sign of understanding
+
+
+
+Course Objectives
+
+Learn by example how to understand proofs
+
+How to invent proofs
+
+How to explain proofs
+
+How to enjoy proofs (most important and ambitious goal)
+
+
+
+Proofs from THE BOOK by Paul Erdos
+
+
+
+
+
+The puzzle was interesting. I knew and understood that 1x2 domino can cover a 8x8 board because each domino covered 2 squares, the tiles had to be even. I knew instinctively that certain configurations wouldn't work, but didn't understand why. Now I understand that for this puzzle not only does the board have to be even but the number of tile "Types", in this case black and white, had to be even. So a board with top left and bottom right corners missing is impossible because there where 30 white tiles and 32 black tiles, each domino requires exactly 1 black tile and 1 white tile.
+
+
+
+The Invariant of the Mutilated Chessboard
+
+Problem: Can a $1 \\times 2$ domino tile an $8 \\times 8$ board with two opposite corners removed?
+
+Logic: An $8 \\times 8$ board has 32 black and 32 white squares. Removing opposite corners removes two squares of the same color (e.g., 2 black).
+
+Proof: Since each domino requires $1B$ and $1W$, and we now have 30 Black and 32 White, a perfect tiling is mathematically impossible.
+
+
+
+Module 1 Reflection (1/27/2026)Focus: Proof by Example vs. Impossibility Proofs
+
+Key Concepts:
+
+* Existence Proofs: Validated that a single example is sufficient to prove a statement of the form "There exists an $x$ such that $P(x)$."
+* Impossibility Proofs (The Invariant Method): Mastered the use of Invariants to prove a task is impossible.
+*  	Case Study: The Mutilated Chessboard. By assigning a parity (color) to each cell, I proved that a $1 \\times 2$ domino must cover exactly one black and one white square.
+*  	Conclusion: If the count of black squares ($B$) does not equal the count of white squares ($W$), a perfect tiling is mathematically impossible.
+
+
+
+Problem Solving Application:
+
+* The $5 \\times 5$ Grid Problem: Analyzed a $25$-cell board ($13$ Black, $12$ White). Determined that there are exactly 13 "Good" cells (all Black).
+* Logic: Removing a white cell leaves $13B/11W$ (Impossible); removing a black cell leaves $12B/12W$ (Possible).
+
+
+
+Assessment:
+
+* Completed all Module 1 videos and interactive puzzles.
+* Quiz Score: 100% (Verified via screenshot in repository).
