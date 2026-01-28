@@ -60,3 +60,20 @@ Assessment:
 
 * Completed all Module 1 videos and interactive puzzles.
 * Quiz Score: 100% (Verified via screenshot in repository).
+
+
+
+
+
+Wednesday Morning Discrete Session (1/28/26)
+
+Summary
+
+The "Structure Hunter" Session. Pivoted from arithmetic solving to Constraint-Based Discovery. Explored the relationship between physical tensegrity systems and mathematical invariants. Successfully solved complex "digit-deletion" riddles using prime factorization and place-value abstraction.
+
+Key Learnings \& Reflections
+
+* **Uncovering vs. Solving**: Realized that in Discrete Math, we often "uncover" values by identifying what must be true. (e.g., In $a \\cdot 10^k = 56x$, the $a$ must be 7 because 10 doesn't contain the prime factor 7).
+* **Place-Value Abstraction**: Mastered the formula $(10^n \\cdot a + x)$ to represent multi-digit shifts.
+* **Physical Invariants (Tensegrities)**: Analyzed how discontinuous compression and continuous tension create stable systems—a physical metaphor for how logical constraints hold a proof together.
+* **Visual Proofs**: Explored splitting polygons and "One Example is Enough" logic, reinforcing that a single counter-example can collapse a universal claim.
