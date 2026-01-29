@@ -77,3 +77,21 @@ Key Learnings \& Reflections
 * **Place-Value Abstraction**: Mastered the formula $(10^n \\cdot a + x)$ to represent multi-digit shifts.
 * **Physical Invariants (Tensegrities)**: Analyzed how discontinuous compression and continuous tension create stable systems—a physical metaphor for how logical constraints hold a proof together.
 * **Visual Proofs**: Explored splitting polygons and "One Example is Enough" logic, reinforcing that a single counter-example can collapse a universal claim.
+
+Wednesday afternoon
+
+
+Today he is discussing infeasible proofs using splitting problems "NP-complete"  problems
+
+The structure of the proof reflect the structure of the claim
+
+*claim*: an object with some property exists
+
+*proof*: an example
+
+one example is enough
+
+no need to disclose the sources
+
+***beware***: claim may be false! solution may not exist
+
