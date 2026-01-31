@@ -142,8 +142,115 @@ Rule: You can only pay amount $C$ with coins $A$ and $B$ if $C$ is a multiple of
 Areas for Further Study & Review
 The Logarithmic Mapping: Spend more time on why squares of numbers starting with "1" and "5" can land in the same leading-digit territory (Scale Invariance).Euclidean Algorithm (Reverse): Practice tracing the algorithm backward to find the specific $x$ and $y$ (the "coin count") for linear combinations.NP-Completeness Intuition: Revisit Alexander Shen’s point on why verifying a solution is easier than finding one, especially as it relates to larger $n \times n$ magic squares.
 
+1. Constraint Satisfaction & The Pigeonhole Principle
+- The Hotel Voucher Problem: Learned how to identify the Infeasibility Firewall.
+- The Rule: To avoid consecutive stays in Hotel $C$, you need at least $n_c - 1$ "insulators" (other hotels).The Formula: $C_{max} = (A + B) + 1$.
+- Insight: If your most frequent resource exceeds your total "gaps," a valid schedule cannot exist.
+2. Numerical Target Practice (Scale Invariance)The 5-Digit Square ($N^2$ starts with 27182):
+- The Method: Use $\sqrt{27182}$ as a base $(\approx 164.869)$ and shift the decimal to meet the digit constraint ($16486.9$).
+- The Trap: Always return the Root ($N$), not the Square ($N^2$).
+- Insight: Significant digits are independent of the decimal point’s position.
+3. The Chinese Remainder Theorem (Shortcut Mastery)
+- The Book Problem (Remainders of 2, 3, 4 for Divisors 3, 4, 5):
+- Brute Force: Testing every number (the $O(N)$ approach).
+- The Shortcut: Identifying a Common Deficit. If you are 1 short of a full group in every scenario, the answer is $LCM(3,4,5) - 1$.
+- The Result: $60 - 1 = \mathbf{59}$.4. 
+- Minimal Payable Amounts (GCD & Linear Combinations)
+- The 12/20/30-Florin Coin Problem:
+- The Logic: The smallest payable amount is the Greatest Common Divisor (GCD) of all available coins.
+- The Proof: Since 12, 20, and 30 are all even, any combination must be even. $GCD(12, 20, 30) = 2$.The Transaction: $12 + 20 - 30 = 2$.
+- Progress Update: 
+Thursday Tasks Completed[x] 
+- Discrete: Assignment "Free Accommodation"[x] 
+- Discrete: Assignment "Is there..."[x] 
+- Discrete: Watch "Paths in a Graph" & Slides
+
+calls are correctly mapped to their machine-code definitions.
+
+4. Reflections for Game Development
+Modularity: Foundations like header files and properly structured main() functions allow for modularity and better execution flow in game applications.
+
+Maintainability: Applying these concepts to real-world scenarios ensures that gaming code remains efficient and manageable as projects scale.
+
+Status Update:
+
+[x] Completed Style Identification Lab.
+
+[x] Completed Code and Style Assessment (100%).
+
+[x] Completed Module 1 Comprehensive Evaluation (100%).
+
+[ ] Refactoring Lab (Currently locked by course staff).
+
+Sat 1/31/2026
+Discussing Optimality
+A factory produces milk chocolate ($10 per box) and dark chocolate ($30 per box). The daily demands are 500 and 200 boxes for milk and dark chocolate, respectively. The factory produces 600 boxes of chocolate per day. What is the optimum production plan?
+Consulting claims $10,000 is optimum profit. How do we prove? Prove that we can produce $10 per day, then show that that is the optimum.
+Plan: Produce 400 boxes of milk chocolate and 200 boxes of Dark chocolate per day. 
+Constraints:
+no more that 500 of milk per day
+no more than 200 of dark per day
+no more than 600 total per day
+
+profit: 400*10 + 200*30 = 10,000
+
+M is milk and D is dark
+M <= 500, D <= 200, M+D<=600
+we want to show that 10M + 30D = 10,000
+sum the inequalities:
+    10M+10D<= 6,000
+        20D<= 4,000
+A proof of the fact that some value a is optimality usually consist of two parts:
+1) Existential statement: there exists a solution achieving the value a
+2) Universal statement: all solutions achieve the value not greater than a
+
+There are 90 cards with all two-digit numbers on them: 
+10,11,12,…,98,99.
+
+A player takes some of these cards simultaneously. For each card taken she gets $1. However, if the player takes two cards that add up to 100 (say, 23 and 77), she loses all the money. How much could she get? 
+
+In mathematical language: What is the maximum number of two-digit integers (10,11,...,99) that one can select satisfying the following condition: no two different selected integers have sum 100?
+
+constraints:
+90 cards
+card face is between 10 <= C <= 99
+if 2 card face values are >= 100 BUST!
+each card is worth $1
+what is max $ without busting
+
+What pairs are bad? P1(10,90),P2(11,89) - P40(49,51)
+50 can't pair with 50, but there is only one 50
+91 - 99 can't pair with anything
+
+40 bad pairs, and 10 loners. or 40-10 =50 total upper bounds
 
 
+The Pigeonhole Principle
+If n pigeons are placed into m boxes and m < n, then there is a box containing more than one pigeon.
 
 
+Discrete Math: 
+Extremal Problems & Optimality (Week Summary)
+1. The Principle of Optimality
+- Framework: Proving a maximum/minimum requires two parts:
+--Existential Statement: A specific configuration that achieves value $A$.
+--Universal Statement: Proof that no configuration can exceed value $A$.
+--Application: Applied to a production optimization problem (Milk vs. Dark Chocolate) using linear inequalities.
+2. Subset Selection & Forbidden Pairs
+- Problem: Maximize a subset of two-digit integers $\{10, \dots, 99\}$ such that no two sum to 100.
+- Logic: Identified 40 "Dangerous Pairs" (e.g., $10+90$) and 10 "Safe Loners" (e.g., $50$ and $91-99$).
+- Solution: $40 \text{ (one from each pair)} + 10 \text{ (all loners)} = 50$.
+3. Chessboard Extremal Problems
+- Rooks ($N=8$): 
+-- Constraint is Row/Column exclusion. Optimized via the Main Diagonal.
+-Knights ($N=32$): 
+-- Constraint is the $L$-jump. Optimized via Color Parity (filling all squares of one color).
+- Bishops ($N=14$): 
+-- Constraint is Diagonal lanes. Optimized via the Perimeter Strategy (lining the top and bottom edges).
 
+Progress Update: 
+Saturday Sprint[x] 
+Discrete: Warmup (Optimality)[x] 
+Discrete: Assignment (Max # 2-digit integers)[x] 
+Discrete: Assignment (Max # rooks, knights, bishops)[x] 
+Discrete: Watch all Friday/Saturday videos
